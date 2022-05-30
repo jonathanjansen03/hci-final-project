@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 0px 0px 0px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 45%;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 50px 20px 50px;
+}
+
+footer div p {
+    color: white; 
+}
+
+footer div img {
+    max-width: 100px;
+}
+
+.responsive-navbar {
+    display: none;
+    padding-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    background-color: #333;
+}
+
+.navbar-logo a img {
+    max-width: 50px;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-logo a p {
+    font-size: 35px;
+    padding-left: 25px;
+}
+
+.navbar-logo, .navbar-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.item a, .dd-menu a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.item a:hover, .dd-menu a:hover {
+    color: #333;
+    background-color: #e9ff26;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dd-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+}
+
+.dropdown:hover .dd-menu {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    background-image: url("../assets/base.png");
+    background-size: cover;
+    flex-direction: column;
+    background-size: 100%;
+    color: #2e2e2e;
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.head {
+    font-weight: bold;
+}
+
+.social-media {
+    /* padding-left: 10px; */
+    padding: 10px 0px 0px 10px;
+}
+
+.social-media p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.insta, .twitter, .youtube, .facebook {
+    padding-right: 10px
+}
+
+.insta {
+    max-width: 35px;
+}
+
+.twitter {
+    max-width: 50px;
+}
+
+.youtube {
+    max-width: 50px;
+}
+
+.facebook {
+    max-width: 40px;
+    padding-left: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.credits > img {
+    max-width: 120px;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo {
+        padding-top: 20px;
+    }
+
+    .responsive-navbar {
+        display: flex;
+        padding: 10px 20px 10px 0px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .dd-menu {
+        position: relative;
+    }
+}

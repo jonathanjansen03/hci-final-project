@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaForant</title>
+    <link rel="stylesheet" href="../css/agents.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/responsive.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html"><img src="../assets/logo-white.png" alt="logo"><p>LaForant</p></a>
+            </div>
+            <div class="responsive-navbar" onclick="toggle()">
+                <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </div>
+            <div class="navbar-menu" id="navbar-menu">
+                <div class="item dropdown">
+                    <a href="">Game Info</a>
+                    <div class="dd-menu">
+                        <a href="maps.html">Maps</a>
+                        <a href="agents.html">Agents</a>
+                    </div>
+                </div>
+                <div class="item"><a href="system-requirement.html">System Requirement</a></div>
+                <div class="item"><a href="pre-register.html" class="pre-register">Pre-Register</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="slider">
+            <button id="previous">&larr;</button>
+            <div class="image-slider">
+                <div class="slides">
+                    <div class="slide">
+                        <p class="name">Astra</p>
+                        <img src="./../assets/Astra.png" alt="Astra">
+                        <p class="desc">
+                            Astra the Ghanaian Agent using the energies of cosmos<br>
+                            to reshape battlefield with her power. With her form and<br>
+                            talent for deep strategic gameplay, she always a step<br>
+                            ahead from her enemy.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Breach</p>
+                        <img src="./../assets/Breach.png" alt="Breach">
+                        <p class="desc">
+                            Breach the human bionic, he fires a powerful blast<br>
+                            and aggressively clear the enemy territory with his<br>
+                            blinding utility. He can make a great teamwork with any<br>
+                            of his teammates.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name class="name"">Brimstone</p>
+                        <img src="./../assets/Brimstone.png" alt="Brimstone">
+                        <p class="desc">
+                            Brimstone Came from USA, his ability is to pull of<br>
+                            his utility and make his teammates can dominate the<br>
+                            battlefield easily. Being a commander and his squad<br>
+                            always got advantages because his utility.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Cypher</p>
+                        <img src="./../assets/Cypher.png" alt="Cypher">
+                        <p class="desc">
+                            The broker that give information. Cypher is a man that<br>
+                            keeps surveying the enemies' movement. With his utility<br>
+                            that made the enemies pull back from the site. No secret<br>
+                            is save, he is always watching.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Jett</p>
+                        <img src="./../assets/Jett.png" alt="Jett">
+                        <p class="desc">
+                            Came from south korea. Jett abilities lead her to fight<br>
+                            aggressively. She can push through the enemy base and<br>
+                            cut enemies down before they see her.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">KillJoy</p>
+                        <img src="./../assets/KillJoy.png" alt="KillJoy">
+                        <p class="desc">
+                            A genius came from the country of German. She secures<br>
+                            the battlefield with her inventions. She dominate the<br>
+                            battlefield with her defending gameplay.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Omen</p>
+                        <img src="./../assets/Omen.png" alt="Omen">
+                        <p class="desc">
+                            Omen came from another world and hunts in shadow. He<br>
+                            pushes off enemies to be blind and teleports across<br>
+                            the battlefield. he can paranoia the enemis and hold<br>
+                            then learn where he might strike next.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Phoenix</p>
+                        <img src="./../assets/Phoenix.png" alt="Phoenix">
+                        <p class="desc">
+                            A guy came from U.K, Phoenix shines through his<br>
+                            fighting styles. Dominate the battlefield with his<br>
+                            flash and flame. He didn’t mind if he didn’t got backup,<br>
+                            he just going to rush them.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Raze</p>
+                        <img src="./../assets/Raze.png" alt="Raze">
+                        <p class="desc">
+                            Raze come far away from Brazil with her blunt force<br>
+                            playstyle. Can easily enter site with her explotions<br>
+                            and big guns. She scared enemies and cleared them all<br>
+                            with her explotions.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Reyna</p>
+                        <img src="./../assets/Reyna.png" alt="Reyna">
+                        <p class="desc">
+                            She came form the capital of Mexico, Reyna dominates<br>
+                            each of single combat. With her cores came from each<br>
+                            kills and assist she gets. Her skill making her<br>
+                            dominate the battlefield
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Sage</p>
+                        <img src="./../assets/Sage.png" alt="Sage">
+                        <p class="desc">
+                            Came from China, sage keep herself and her teammates<br>
+                            safe with the healing abilities. She able to revive<br>
+                            the died teammates. She plays with a calm and<br>
+                            defensive gameplay.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Skye</p>
+                        <img src="./../assets/Skye.png" alt="Skye">
+                        <p class="desc">
+                            Came from Australia , Skye, with her beast trail-blaze,<br>
+                            can search for info through the enemy territory. with<br>
+                            her creation , she can blind enemies and push through<br>
+                            the enemy territory easily. The team will be safe with<br>
+                            her healing abilities.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Sova</p>
+                        <img src="./../assets/Sova.png" alt="Sova">
+                        <p class="desc">
+                            Born from Russia, sova tracks, finds, and<br>
+                            eliminates the enemies he tracks. His abilities<br>
+                            makes whenever you run, you cannot hide.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Viper</p>
+                        <img src="./../assets/Viper.png" alt="Viper">
+                        <p class="desc">
+                            The American Alchemist. Viper deploys her poisonous<br>
+                            chemicals and control the battlefield the way she<br>
+                            wants. She blocks the enemy vision and help teammates<br>
+                            push through easily.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="name">Yoru</p>
+                        <img src="./../assets/Yoru.png" alt="Yoru">
+                        <p class="desc">
+                            Yoru came far away from Japan with his teleportation.<br>
+                            He dominates the battlefield using aggressive and<br>
+                            faking methods. He down enemies easily before they can<br>
+                            see him.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button id="next">&rarr;</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="social-media">
+            <p>Our Social Media</p>
+            <div class="social-media-logos">
+                <a href="https://www.instagram.com/playvalorantofficial/"><img src="../assets/instagram.png" alt="insta" class="insta"></a>
+                <a href="https://twitter.com/playvalorant"><img src="../assets/twitter.png" alt="twitter" class="twitter"></a>
+                <a href="https://www.youtube.com/channel/UC8CX0LD98EDXl4UYX1MDCXg"><img src="../assets/youtube.png" alt="youtube" class="youtube"></a>
+                <a href="https://www.facebook.com/PlayVALORANT/"><img src="../assets/facebook.png" alt="facebook" class="facebook"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2021, LaForant games</p>
+        </div>
+        <div class="credits">
+            <img src="../assets/logo-white.png" alt="logo">
+            <p>Made with Love by Aldo, Jansen, and Richard</p>
+        </div>
+    </footer>
+</body>
+</html>

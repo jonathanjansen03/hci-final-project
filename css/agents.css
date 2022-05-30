@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 0px 0px 0px 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 50px 20px 50px;
+}
+
+footer div p {
+    color: white;
+}
+
+footer div img {
+    max-width: 100px;
+}
+
+.responsive-navbar {
+    display: none;
+    padding-top: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../assets/base.png");
+    background-size: 100%;
+    color: #2e2e2e;
+}
+
+.slider{
+    margin-top: 2rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    background-color: #333;
+}
+
+.navbar-logo a img {
+    max-width: 50px;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-logo a p {
+    font-size: 35px;
+    padding-left: 25px;
+}
+
+.navbar-logo, .navbar-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.item a, .dd-menu a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.item a:hover, .dd-menu a:hover {
+    color: #333;
+    background-color: #e9ff26;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dd-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+}
+
+.dropdown:hover .dd-menu {
+    display: flex;
+}
+
+.social-media {
+    padding: 10px 0px 0px 10px;
+}
+
+.social-media p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.insta, .twitter, .youtube, .facebook {
+    padding-right: 10px
+}
+
+.insta {
+    max-width: 35px;
+}
+
+.twitter {
+    max-width: 50px;
+}
+
+.youtube {
+    max-width: 50px;
+}
+
+.facebook {
+    max-width: 40px;
+    padding-left: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.credits img {
+    max-width: 120px;
+}
+
+.image-slider {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.slide img {
+    padding-left: 200px;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    float: left;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.desc {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.slide img {
+    width: 50%;
+}
+
+#next, #previous {
+    border: none;
+    background-color: yellow;
+    color: #333;
+    font-size: 30px;
+    padding-bottom: 1%;
+    border-radius: 10%;
+}
+
+#next:hover, #previous:hover{
+    background-color: orange;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo {
+        padding-top: 20px;
+    }
+
+    .responsive-navbar {
+        display: flex;
+        padding: 10px 20px 10px 0px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .dd-menu {
+        position: relative;
+    }
+}

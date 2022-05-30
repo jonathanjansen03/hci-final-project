@@ -1,0 +1,105 @@
+.regis{
+    margin: 1rem 0;;
+}
+
+.regis-username{
+    margin-top: 5rem;
+}
+
+.content-reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../assets/reg.png");
+    background-size: 100%;
+    color: #2e2e2e;
+    padding: 0 5rem;
+}
+
+
+.form-reg{
+    padding: 10rem 5rem;   
+}
+
+.container-agreement{
+    display: flex;
+    flex-direction: row;
+}
+
+input, select{
+    width: 25vw;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    display: flex;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+legend{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.submit {
+    margin-top: 1rem;
+    height: 5vh;
+    width: 10vw;
+    font-weight: 900;
+    background-color: #2c1a42;
+    font-size: 15px;
+    color: orange;
+    padding: 0.5rem 1rem;
+    border: 0.3rem orange solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit:hover{
+    background-color: orange;
+    color: #2c1a42;
+    border: 0.3rem #2c1a42 solid;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo {
+        padding-top: 20px;
+    }
+
+    .responsive-navbar {
+        display: flex;
+        padding: 10px 20px 10px 0px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .dd-menu {
+        position: relative;
+    }
+
+    .content-reg {
+        background-image: url("../assets/base.png");
+    }
+
+    .submit {
+        width: 100px;
+    }
+}
